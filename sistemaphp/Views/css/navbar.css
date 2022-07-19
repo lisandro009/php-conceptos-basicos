@@ -1,0 +1,39 @@
+.header{
+    background-color: #242F9B;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0 40px;
+    line-height: 60px;
+}
+ .nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 60px;
+    width: max-content;
+}
+ .nav-menu-item a{
+    text-decoration: none;
+    color: #DBDFFD;
+}
