@@ -2,7 +2,7 @@
 
 class View{
 
-    public function render(){
+    public function render($nombre){
         require 'views/'.$nombre.'.php';
     }
 }

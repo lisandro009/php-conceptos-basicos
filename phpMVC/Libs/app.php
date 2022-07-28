@@ -7,8 +7,8 @@ class App{
         if ($url==null) {
             // require_once "Controllers/index.php";
             // $index=new Index();
-            $db=new Db();
-            $db->conn();
+            require "Controllers/indexController.php";
+            $index=new IndexController();
         }
     }
 }
