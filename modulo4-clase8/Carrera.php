@@ -1,5 +1,4 @@
 <?php 
-
 class Carrera{
     private $nombre;
     private $materias= array();
@@ -31,9 +30,5 @@ class Carrera{
 
 }
 
-$materia1= new Materia("PRN115");
-$materia2= new Materia("PRN215");
-$carrera1=new Carrera("Ingenieria industrial");
-$carrera2=new Carrera("Ingenieria de sistemas informaticos");
 
 

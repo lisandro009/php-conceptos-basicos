@@ -19,13 +19,13 @@ class Producto{
         return $this->precio;
     }
     public function setPrecio($precio){
-        $this-> precio=precio;
+        $this-> precio=$precio;
     }
     public function getCategoria($indice){
         if (sizeof($this->categorias)>$indice) {//Verficamos si el indice proporcionado es valido
             return $this->categorias[$indice];
         }else{
-            return "Error al objetener la categoria";
+            throw new Exception('Error al objetener la categoria');
         }
     }
     public function setCategoria($categoria){

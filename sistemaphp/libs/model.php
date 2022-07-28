@@ -2,7 +2,7 @@
 
 class Model{
 
-    protected $dbConexion;
+    protected $pdoConexion;
     
     function __construct(){
         $this->db=new Database();

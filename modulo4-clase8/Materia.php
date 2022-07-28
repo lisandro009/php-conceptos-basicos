@@ -7,7 +7,7 @@ class Materia{
         $this->setCodigo($codigo);
     }
 
-    public function setCodigo($codigo){
+    public function setCodigo($codigo){//Validamos  que el codigo tenga 6 caracteres
         if (strlen($codigo)==6) {
             # code...
             $this->codigo=$codigo;
@@ -16,7 +16,6 @@ class Materia{
             
         }
     }
-
     public function getCodigo(){
         return $this->codigo;
     }
