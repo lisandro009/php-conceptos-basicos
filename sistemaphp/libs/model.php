@@ -2,10 +2,10 @@
 
 class Model{
 
-    protected $pdoConexion;
+    protected $connPdo;
     
     function __construct(){
         $this->db=new Database();
-        $this->pdoConexion=$this->db->conectar();
+        $this->connPdo=$this->db->conectar();
     }
 }

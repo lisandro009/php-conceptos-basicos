@@ -23,11 +23,14 @@ class Autenticacion extends Controller{
                 if($this->model->verificarUsuario($email,$password)){
                     $_SESSION['user']=$email;
                     header("Location:".constant('url'));
-        
+                    }else{
+                    echo("asdsd");
+
                     }
             }
         }else{
             header("Location:".constant('url'));
+            echo("asdsd");
 
         }       
     }

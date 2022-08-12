@@ -1,28 +1,22 @@
 <?php
 
 class Db{
-    private $host;
-    private $password;
-    private $user;
-    private $dbname;
-    private $port;
+    private static $host="localhost";
+    private static $password="X0!4Pi0b6%9n";
+    private static $user="root";
+    private static $dbname="mydb";
+    private static $port="3307";
 
     function __construct(){
-        $this->host="localhost";
-        $this->password="X0!4Pi0b6%9n";
-        $this->user="root";
-        $this->dbname="mydb";
-        $this->port="3307";
-
     }
 
-    public function conn(){
+    public function conectarDb(){
         try{
             $options=[
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES=>false
             ];
-            $conn=new PDO('mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->dbname,$this->user,$this->password,$options);
+            $conn=new PDO('mysql:host='.self::$host.';port='.self::$port.';dbname='.self::$dbname,self::$user,self::$password,$options);
             return $conn;
         }catch(PDOException $e){
             echo ("Error de conexion ".$e->getMessage());

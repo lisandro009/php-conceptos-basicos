@@ -27,7 +27,7 @@ class UsuarioModel extends Model{
         }
     }
     public function verificarUsuario($correo,$password){
-        $resultado=$this->pdoConexion->prepare("Select * from usuarios where email= :email and password=:password");
+        $resultado=$this->connPdo->prepare("Select * from persona where correo= :email and password=:password");
         $resultado->execute([':email'=>$correo,':password'=>$password]);
         $usuario = $resultado->fetch(PDO::FETCH_ASSOC);
 

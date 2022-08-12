@@ -23,7 +23,7 @@
                     echo '<li class="nav-menu-item"><a href="'. constant('url'). 'autenticacion/logout">'.$_SESSION['user'].'</a></li>';
 
                 }else{
-                    echo '<li class="nav-menu-item"><a href="'. constant('url').'autenticacion">Iniciar sesion</a></li>';
+                    echo '<li class="nav-menu-item"><a href="'. constant('url').'autenticacion/login">Iniciar sesion</a></li>';
 
                 }
                 ?>
